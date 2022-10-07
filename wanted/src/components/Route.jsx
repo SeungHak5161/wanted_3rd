@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect } from "react";
 import { useRouterContext } from "./Router";
 
 const Route = ({ component }) => {
