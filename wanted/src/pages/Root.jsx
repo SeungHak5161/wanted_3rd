@@ -4,7 +4,7 @@ export default function Root() {
   const { push } = useRouter();
   return (
     <>
-      About
+      <div>Root</div>
       <button
         onClick={() => {
           push("/about");

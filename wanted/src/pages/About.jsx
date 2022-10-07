@@ -4,7 +4,7 @@ export default function About() {
   const { push } = useRouter();
   return (
     <>
-      About
+      <div>About</div>
       <button
         onClick={() => {
           push("/");

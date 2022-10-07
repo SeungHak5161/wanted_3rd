@@ -1,6 +1,6 @@
 import { createContext, useState, useContext } from "react";
 
-const RouterContext = createContext();
+export const RouterContext = createContext();
 
 const Router = ({ children }) => {
   const [pathname, setPathname] = useState(location.pathname);
@@ -10,10 +10,6 @@ const Router = ({ children }) => {
       {children}
     </RouterContext.Provider>
   );
-};
-
-export const useRouterContext = () => {
-  return useContext(RouterContext);
 };
 
 export default Router;
